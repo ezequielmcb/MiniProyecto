@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.secInicial {
+    height: 100vh;
+    padding: 20px;
+}
+
+.icnoImg {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    height: 5vh;
+}
+
+.caja{ 
+    margin-top: 50px
+}
+
+.imgName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.doggel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 1px;
+}
+
+.cajita{    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 40px;
+}
+
+.cajita > p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4f4f4f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cajita:hover{
+    background-color: #E0E0E0;
+    cursor: pointer;
+    border-radius: 8px;
+} 
+
+.logout{
+    margin-bottom: 5px;
+    border-top: 1px solid  #E0E0E0;
+    color:#EB5757;
+}
+
+.cajita > img {
+    height: 23px;
+    width: 19px;
+}
+
+.person > img{
+    background-color: #4E4E4E;
+    border-radius: 100%;
+    height: 25px;
+    width: 20px;
+}
+
+.img {
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+}
+
+.divA{
+    margin-top: 20px;
+}
+
+.divA > a {
+    text-decoration: none; 
+}
+
+.sectionEdit{
+    margin-top: 20px;
+}
+
+.intro > h1{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.intro > p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.divImg{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputImg {
+    font-size: 13px;
+    font-weight: 500;
+    color: #828282;
+    border: none;
+    background-color: transparent;
+    outline: none;    
+    cursor: pointer;
+}
+
+.foto{
+    position: relative;
+    cursor: pointer;
+    height: 72px;
+    width: 72px;
+}
+
+.foto > img:first-child{
+    height: 72px;
+    width: 72px;
+    border-radius: 8px;
+}
+
+#forma{
+    object-fit: cover;
+    height: 72px;
+    width: 72px;
+}
+
+.foto >div {
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.foto > div >img{
+    height: 72px;
+    width: 72px;
+}
+
+.camara{
+    padding: 30%;
+}
+
+.llenar{
+    margin-top: 20px;
+}
+
+.info{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info > label{
+    font-size: 13px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.info > input{
+    padding: 0 10px;
+    height: 35px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #828282;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bio > input {
+    height: 75px;
+}
+
+.boton{
+    background-color: #2F80ED;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.dataP{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dataP > h1{
+    font-size: 11px;
+    font-weight: 600;
+    color: #828282;
+}
+
+.dataP > p{
+    font-size: 11px;
+    font-weight: 600;
+    color: #828282;
+}
+
+#name{
+    font-size: 12px;
+    font-weight: 700;
+    color: #333333;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.change{
+    font-size: 13px;
+    font-weight: 500;
+    color: #828282;
+}
+
+
+@media screen and (min-width: 1280px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .divAll{
+        width: 1280px;
+    }
+
+    .secInicial{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sectionEdit{
+        border: 1px solid #828282;
+        border-radius: 12px;
+        padding: 30px;
+        width: 600px;
+        height: 650px;
+    }
+
+    .info{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dataP{
+        margin-top: 10px;
+    }
+
+    .icnoImg {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+    
+    .doggel{
+        margin-top: 20px;
+    }
+
+    .cajita{    
+        gap: 15px;
+        padding: 25px 40px;
+    }
+}
